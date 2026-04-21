@@ -293,6 +293,14 @@
   margin-bottom: 1rem;
 }
 
+.cert-badge-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .cert-name {
   font-size: 1rem;
   font-weight: 700;

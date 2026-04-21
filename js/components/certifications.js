@@ -1,6 +1,11 @@
-const certCard = ({ name, issuer, date, status, icon, type, url }) => `
+const certIcon = ({ icon, badge, badgeSize }) =>
+  badge
+    ? `<div class="cert-icon"><img src="${badge}" alt="badge" class="cert-badge-img" style="width:${badgeSize || 90}px;height:${badgeSize || 90}px" /></div>`
+    : `<div class="cert-icon">${icon}</div>`;
+
+const certCard = ({ name, issuer, date, status, icon, badge, badgeSize, type, url }) => `
   <a href="${url}" target="_blank" class="cert-card ${type} fade-in">
-    <div class="cert-icon">${icon}</div>
+    ${certIcon({ icon, badge, badgeSize })}
     <h3 class="cert-name">${name}</h3>
     <p class="cert-issuer">${issuer}</p>
     <div class="cert-footer">
