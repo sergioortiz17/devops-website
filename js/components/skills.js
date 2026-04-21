@@ -11,9 +11,6 @@ const skillCategory = ({ type, icon, title, subtitle, items }) => `
 export const render = (container, { skills }) => {
   container.innerHTML = `
     <div class="container">
-      <p class="section-label fade-in">// technical skills</p>
-      <h2 class="section-title fade-in">Tools &amp; <span>technologies</span></h2>
-      <p class="section-desc fade-in">A broad toolkit built across multiple disciplines in software engineering.</p>
       <div class="skills-grid">
         ${skills.map(skillCategory).join('')}
       </div>
