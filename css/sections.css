@@ -425,6 +425,16 @@ a.nav-logo { text-decoration: none; display: inline-block; }
 
 .timeline-header-text { }
 
+.company-logo-link {
+  display: block;
+  flex-shrink: 0;
+  border-radius: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.company-logo-link:hover {
+  transform: scale(1.05);
+}
+
 .company-logo {
   width: 160px;
   height: 160px;
@@ -763,6 +773,7 @@ footer {
   /* Hero */
   .hero-name { letter-spacing: -2px; }
   #hero { padding: 5rem 1.5rem 3rem; }
+  .scroll-indicator { display: none; }
 
   /* Timeline — logo above description on mobile */
   .timeline { padding-left: 0; }

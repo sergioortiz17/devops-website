@@ -1,6 +1,5 @@
 const skillCategory = ({ type, icon, title, subtitle, items }) => `
   <div class="skill-category ${type} fade-in">
-    <div class="skill-cat-icon">${icon}</div>
     <h3 class="skill-cat-title">${title}</h3>
     <p class="skill-cat-sub">${subtitle}</p>
     <div class="skill-list">
